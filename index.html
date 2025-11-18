@@ -4,11 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICT APP</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+            background: linear-gradient(270deg, #4f62ff, #6b8cff, #9bbdff);
+            background-size: 600% 600%;
+            animation: gradientMove 10s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            max-width: 750px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+        }
+
+        img {
+            width: 260px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            animation: popIn 0.8s ease;
+        }
+
+        @keyframes popIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>My First Cloude Deployment</h1>
-    <h2>Hello, my name is RAMIE GAYONDATO JR</h2>
-    <img src="https://media1.tenor.com/m/R9E4h1vKHr8AAAAd/mewing-mew.gif" alt="sample-image" width="200">
-    <p>This is my first deployment</p>
+    <div class="card">
+        <h1>My First Cloud Deployment</h1>
+        <h2>Hello, my name is <strong>RAMIE GAYONDATO JR</strong></h2>
+
+        <img src="https://media1.tenor.com/m/R9E4h1vKHr8AAAAd/mewing-mew.gif" alt="Sample Image">
+
+        <p>This is my first deployment 🚀✨</p>
+
+        <footer>
+            © 2025 DICT App Project <br>
+            Cloud and DevOps Basics
+        </footer>
+    </div>
 </body>
 </html>
